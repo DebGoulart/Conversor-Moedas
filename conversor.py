@@ -1,7 +1,7 @@
 import requests
 
 def obter_cambio():
-    url = "https://api.exchangerate-api.com/v4/latest/USD"
+    url = " "
 
     response = requests.get(url)
     data = response.json()
