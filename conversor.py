@@ -1,7 +1,7 @@
 import requests
 
 def obter_cambio():
-    url = " "
+    url = "https://api.exchangerate-api.com/v4/latest/USD"
 
     response = requests.get(url)
     data = response.json()
@@ -20,7 +20,7 @@ def converter_cambios(valor, moeda1, moeda2, taxa):
         print("Erro! Não consegui obter a taxa de câmbio.")
 
         return None
-    
+
 taxa_cambio = obter_cambio()
 valor = float(input('Digite o valor a ser convertido: '))
 moeda1 = input('Digite a moeda de origem: ').upper() 

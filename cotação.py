@@ -28,5 +28,5 @@ def cotacoes():
 
 while True:
     cotacoes()
-    t.sleep(30)
+    t.sleep(60)
 
