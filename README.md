@@ -22,7 +22,7 @@ O aplicativo também exibe uma tabela com as últimas cotações de câmbio, inc
 ## Pré-requisitos
 
 - Python 3.x instalado
-- Bibliotecas utilizadas no aplicativo (veja em `requirements.txt`)
+- Bibliotecas utilizadas no aplicativo (veja em [Requirements.txt](Requirements.txt))
 
 ## Como Usar
 
@@ -30,25 +30,19 @@ O aplicativo também exibe uma tabela com as últimas cotações de câmbio, inc
 
 2. Instale as bibliotecas necessárias: `pip install -r requirements.txt`
 
-3. Execute o aplicativo: `Conversor.py`
+3. Execute o aplicativo: [Conversor.py](Conversor.py)
 
 4. Escolha a moeda de origem, a moeda de destino e insira o valor a ser convertido.
 
 5. Clique no botão "Converter" para obter o valor convertido.
 
-
-
 ## Aviso
 
 A moeda Real (BRL) ainda não está disponível no programa. Aguarde as próximas atualizações.
 
-
-
 ## Autores
 
-- [Deborah Goulart](https://github.com/DebGoulart) - Desenvolvedor
-
-
+- [Deborah Goulart](https://github.com/DebGoulart) - Desenvolvedora
 
 ## Licença
 
