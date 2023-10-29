@@ -28,16 +28,9 @@ O aplicativo também exibe uma tabela com as últimas cotações de câmbio, inc
 
 1. Clone o repositório para o seu computador.
 
-2. Instale as bibliotecas necessárias:
+2. Instale as bibliotecas necessárias: `pip install -r requirements.txt`
 
-    ```python
-Instale as dependências do projeto usando o pip
-
-pip install -r requirements.txt
-```
-
-
-3. Execute o aplicativo: **Conversor.py**
+3. Execute o aplicativo: `Conversor.py`
 
 4. Escolha a moeda de origem, a moeda de destino e insira o valor a ser convertido.
 
