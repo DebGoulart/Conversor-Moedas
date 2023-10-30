@@ -20,7 +20,6 @@ def cotacoes():
             maximo = float(cotacao['high'])
             minimo = float(cotacao['low'])
 
-
             if maximo != 0:
                 porcentagem_variacao = (variacao / maximo) * 100
             else:
@@ -91,22 +90,17 @@ def calcular_conversao():
     valor = float(valor_entry.get())
     moeda_origem = moeda_origem_var.get()
     moeda_destino = moeda_destino_var.get()
-    cotacoes_atualizadas = cotacoes()
-
-    if cotacoes_atualizadas:
-        valor_convertido = converter_moedas(valor, moeda_origem, moeda_destino, cotacoes_atualizadas)
-        if valor_convertido is not None:
-            resultado_label.config(text=f"{valor:.2f} {moeda_origem} = {valor_convertido:.2f} {moeda_destino}")
-        else:
-            resultado_label.config(text="Moedas inválidas")
+    valor_convertido = converter_moedas(valor, moeda_origem, moeda_destino, cotacoes())
+    if valor_convertido is not None:
+        resultado_label.config(text=f"{valor:.2f} {moeda_origem} = {valor_convertido:.2f} {moeda_destino}")
     else:
-        resultado_label.config(text="Erro ao obter cotações")
+        resultado_label.config(text="Moedas inválidas")
 
 # Interface gráfica
 root = Tk()
 root.title("Conversor de Moedas")
 
-largura_maxima = 1200
+largura_maxima = 1400
 
 largura_tela = root.winfo_screenwidth()
 altura_tela = root.winfo_screenheight()
@@ -115,7 +109,6 @@ y = (altura_tela - 800) // 2
 
 frame = Frame(root)
 frame.pack()
-
 
 root.geometry(f"{largura_maxima}x400+{x}+{y}")
 
@@ -144,7 +137,7 @@ moeda_destino_var = StringVar(value='EUR')
 moeda_destino_menu = OptionMenu(frame, moeda_destino_var, 'USD', 'CAD', 'AUD', 'EUR', 'GBP', 'JPY')
 moeda_destino_menu.pack(side=LEFT)
 
-converter_button = Button(frame, text="Converter")
+converter_button = Button(frame, text="Converter", command=calcular_conversao)
 converter_button.pack(side=LEFT)
 
 resultado_label = Label(root, text="")
@@ -162,7 +155,6 @@ treeview.heading("Variação (%)", text="Variação (%)")
 treeview.heading("Máximo", text="Máximo")
 treeview.heading("Mínimo", text="Mínimo")
 treeview.pack()
-
 
 abrir_janela_aviso()
 
