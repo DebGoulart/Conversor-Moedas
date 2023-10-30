@@ -1,7 +1,5 @@
 # Conversor de Moedas
 
-![Conversor de Moedas](img/Screenshot-conversor.png)
-
 Um conversor de moedas que permite converter entre as seguintes moedas: 
 
 - Dólar Americano (USD)
@@ -12,6 +10,8 @@ Um conversor de moedas que permite converter entre as seguintes moedas:
 - Iene Japonês (JPY)
 
 O aplicativo também exibe uma tabela com as últimas cotações de câmbio, incluindo valores de compra, venda, variação, porcentagem de variação, máximo e mínimo para cada moeda.
+
+![Conversor de Moedas](img/Screenshot-conversor.png)
 
 ## Funcionalidades
 
