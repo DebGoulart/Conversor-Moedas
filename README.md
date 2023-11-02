@@ -36,7 +36,7 @@ The application also displays a table with the latest exchange rates, including 
 
 5. Click the "Convert" button to get the converted value.
 
-## Notice
+## Notice 🛑
 
 The Brazilian Real (BRL) currency is not yet available in the program. Please stay tuned for future updates.
 
