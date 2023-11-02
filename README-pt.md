@@ -36,7 +36,7 @@ O aplicativo também exibe uma tabela com as últimas cotações de câmbio, inc
 
 5. Clique no botão "Converter" para obter o valor convertido.
 
-## Aviso
+## Aviso 🛑
 
 A moeda Real (BRL) ainda não está disponível no programa. Aguarde as próximas atualizações.
 
